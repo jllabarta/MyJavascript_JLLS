@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1.14. Usuarios premium.</title>
+    </head>
+    <body>
+        <script>
+            const users=[
+                {username: "ppc90", age: 30, premium: false},
+                {username: "lu65", age: 24, premium: true},
+                {username: "maria3", age: 36, premium: false},
+                {username: "abc123", age: 20, premium: true},
+                {username: "sergio58", age: 26, premium: false}
+            ];
+            
+            const NoPremium=users.filter(user=>user.premium==false);
+                {console.log(NoPremium)} 
+            const Premium=users.filter(user=>user.premium==true);   
+                {console.log(Premium)} 
+             let i=0;
+             let fin=Premium.length;                          
+                for(i; i<fin; i++){console.log(Premium[i])}        
+        </script>
+    </body>
+</html>

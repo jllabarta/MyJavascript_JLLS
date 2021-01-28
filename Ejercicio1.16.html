@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1.16. Perímetro y área.</title>
+    </head>
+    <body>
+        <script>
+            class Cuadrado{
+              constructor(nombre,tipo,lado,perimetro,area){
+                this.nombre=nombre;
+                this.tipo=tipo;
+                this.lado=lado;
+                this.perimetro=lado*4;
+                this.area=lado*lado;
+                console.log("Este cuadrado tiene "+this.lado+ "cm de lado, su perímetro es "+this.perimetro+
+              " cm y su área "+this.area)
+              }               
+  
+            };
+            const pequeño=new Cuadrado("pequeño","cuadrado",2);
+            const mediano=new Cuadrado("mediano","cuadrado",5);
+            const grande=new Cuadrado("grande","cuadrado",10);
+            console.log(Cuadrado)
+
+        </script>
+    </body>
+</html>

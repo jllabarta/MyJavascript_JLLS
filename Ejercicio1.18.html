@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1.18. Facturas</title>
+    </head>
+    <body>
+      <h1>DOM</h1>
+<h2>Crear mapas</h2>
+<p>Cree mapas interactivos que expliquen sus datos y animen a los usuarios a explora
+rlos. Cree un mapa de sus propios datos y gane perspectiva agregando los datos acreditad
+os basados en ubicación incluidos en ArcGIS Online. Utilice la representación cartográfi
+ca inteligente para guiar la exploración y la visualización de los datos.
+<a href="https://www.esri.com/es-es/arcgis/products/arcgisonline/
+capabilities/make-maps">Información sobre creación de mapas</a>
+</p>
+<h2>Herramientas para desarrolladores</h2>
+<p>Todas las capacidades de ArcGIS Online están disponibles a través de diversas API
+y SDK. Los desarrolladores pueden empezar su trabajo aprovechando los mapas, análisis y
+estilos creados por sus compañeros del ámbito de la representación cartográfica. Amplíe
+y personalice elementos de ArcGIS Online y desarrolle aplicaciones personalizadas con l
+as herramientas de desarrollador.
+<a href="https://www.esri.com/en-us/arcgis/products/arcgis-fordevelopers/
+overview">Explorar ArcGIS for Developers</a>
+</p>
+<h2>Operaciones de campo</h2>
+<p id="thirdparagraph">
+Conecte operaciones de campo y oficina con datos compartidos. Cree datos, map
+as y aplicaciones para su referencia o uso por parte del personal de campo para fines de
+captura de datos. Utilice <a href="https://doc.arcgis.com/es/collector/android/createmaps/
+offline-mapprep.
+htm">mapas sin conexión</a> y sincronice cuando vuelva a conectarse. Los datos capt
+urados pasan a formar parte de ArcGIS Online para utilizarlos en aplicaciones y cuadros
+de mando.
+<a href="https://www.esri.com/en-us/arcgis/products/fieldoperations/
+overview">Explorar operaciones de campo</a>
+</p>
+<p>
+pág. 42
+<a href="https://geonet.esri.com/welcome">Geonet</a> es el lugar donde puedes comp
+artir, chatear y colaborar con todo tipo de recursos geo.
+</p>
+<p>
+<a href="http://mappingcenter.esri.com">Mapping Center</a> es el sitio destinado a
+ayudar a crear mapas con ArcGIS.
+</p>
+
+<script>
+
+  const enlaces=document.getElementsByTagName("a");
+  const nenlaces=enlaces.length;
+  console.log(enlaces)
+  alert("En esta página hay " + nenlaces + " enlaces a otras páginas.")
+  console.log(enlaces[(nenlaces-2)])
+  alert("El penultimo enlace es: "+(enlaces[(nenlaces-2)]))
+
+  //Enlaces del tercer párrafo.
+  const P3 = document.getElementById("thirdparagraph");
+  console.log(P3)
+  const P3enlaces=P3.getElementsByTagName("a")
+  console.log(P3enlaces)
+  alert("En el parrafo 3 hay " + P3enlaces.length + "enlaces")
+
+  // Mostrar numero de enlaces con innerHTML:
+  const Resultado01 = document.querySelector('#number-enlaces');
+  Resultado01.innerHTML = 'En esta página hay ${enlaces.length} enlaces a otras páginas';
+
+  // Crear nodo:
+  const Resultado02 = document.createElement("p");
+  const CResultado02 = document.createTextNode(penultimate);
+  Resultado02.appendChild(CResultado02);
+
+  const RParrafo = document.querySelector(".results");
+  RParrafo.appendChild(Resultado02);
+
+  // Mostrar el tercer resultado
+  const Resultado03 = document.querySelector("#third-result");
+  Resultado03.innerHTML = "En el tercer párrafo hay ${numberLinks} enlaces.";
+
+
+
+
+</script>
+    </body>
+</html>

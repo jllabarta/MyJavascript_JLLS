@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1.8: propiedades de cadenas y Arrays</title>
+    </head>
+    <body>
+        <script>
+            var frase=(prompt("Escribe la frase que quieras: "))
+
+            function CheckFrase(frase)
+                // Definicion de variables en cadenas:
+                //const NumMayusculas=frase.count(/[A-Z]/);
+                {   var contar = 0;
+                    var cadena = "CaDena con MayUsCulAs";
+                    var may = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+                    for (var i = 0; i < may.length; i++) {
+                    for (var x = 0; x < cadena.length; x++) {
+                    if(cadena[x]==may[i]){
+                    contar+=1;
+                        }
+                    }
+                }
+                // Contar minusculas                    
+                    const NLetras=frase.length;
+                    const min=(NLetras-contar)
+                    //const NumMinusculas=frase.search(/[a-z]/);
+                    const Mayusculas=frase.toUpperCase();
+                    const Minusculas=frase.toLowerCase();
+                    const Concatenar=frase.concat("::Esta frase es una mina::");
+                    // Definicion de variables para Arrays:(PALABRAS)
+                    const Palabras=frase.split(" ");
+                    const NumeroPalabras=Palabras.length;
+                    const InvertirPalabras=Palabras.reverse();
+                    const FraseInversa=Palabras.join(" ")
+                    // Definicion de variables para Arrays:(LETRAS)
+                    const Letras=frase.split("");
+                    const NumeroLetras=Letras.length;
+                    const Sartel=Letras.reverse();
+                    
+                //Mensajes de consola
+                {console.log("INFORME DETALLADO DE LA ORACIÓN ESCRITA:")}
+                {console.log("El número de letras de la oración es: "+NLetras)}
+                console.log("Se encontraron: "+contar+" Mayusculas y "+min+" minúsculas");
+                {console.log("Escrita en mayúsculas: "+contar)}
+                {console.log("Escrita en minúsculas: "+min)}
+                {console.log("Escrita en mayúsculas: "+Mayusculas)}
+                {console.log("Escrita en minúsculas: "+Minusculas)}
+                {console.log(Concatenar)}
+                //Mensaje consola Array::  PALABRAS              
+                {console.log(Palabras)}
+                {console.log("El número de palabras de la oración es: "+NumeroPalabras)}
+                {console.log(InvertirPalabras)}
+                {console.log(FraseInversa)}
+                //Mensaje consola Array::  LETRAS                    
+                {console.log(Letras)}
+                {console.log("El número de letras de la oración es: "+NumeroLetras)}
+                {console.log(Sartel)}
+            return NumeroLetras;
+            return Concatenar;
+            return Mayusculas;
+            return Minusculas;
+            return Palabras;
+            return Letras;
+            return Sartel;
+            return InvertirPalabras;} 
+            
+            
+        </script>
+    </body>
+</html>

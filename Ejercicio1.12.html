@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1.12. Cuál es la palabra más larga.</title>
+    </head>
+    <body>
+        <script>
+            const words = ["Environmental", "Systems","Research", "Institute"];
+            
+            const longest = words.reduce((acc, current) => {
+                if (acc.length > current.length) {
+                    return acc
+                }
+                else {
+                    return current
+                }
+            });
+            
+                
+        </script>
+    </body>
+</html>

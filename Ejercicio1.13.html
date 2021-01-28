@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1.13. Concatenación de métodos.</title>
+    </head>
+    <body>
+        <script>
+            const Meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+            const longMeses=Meses
+                .filter(mes=>mes.length>7)
+                .map(mes=>mes.toUpperCase());
+            const MESES=longMeses.length;
+                       
+            console.log("RESULTADO DEL PROCESO:");
+            console.log(MESES + " son los meses con mas de 7 letras, y estos son: "+longMeses);
+            
+                
+        </script>
+    </body>
+</html>
